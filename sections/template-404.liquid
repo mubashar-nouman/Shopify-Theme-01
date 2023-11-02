@@ -1,0 +1,39 @@
+<section class="bg-white dark:bg-gray-900">
+  <div class="py-8 min-h-screen px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+    <div class="mx-auto max-w-screen-sm text-center">
+      <h1 class="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-primary-600 dark:text-primary-500">{{ section.settings.title }}</h1>
+      <p class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">{{ section.settings.p-1 }}</p>
+      <p class="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">{{ section.settings.p-2 }}</p>
+      <a href="/" class="hover:no-underline">
+        <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+          Go to Homepage
+        </button>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Template 404",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "default": "404",
+        "label": "404 Heading Title"
+      }, {
+        "type": "text",
+        "id": "p-1",
+        "default": "Something's missing.",
+        "label": "404 Paragraph-1"
+      }, {
+        "type": "text",
+        "id": "p-2",
+        "default": "Sorry, we can't find that page. You'll find lots to explore on the home page.",
+        "label": "404 Paragraph-2"
+      }
+    ]
+  }
+{% endschema %}

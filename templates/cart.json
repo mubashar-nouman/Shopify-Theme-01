@@ -1,0 +1,10 @@
+{
+    "name": "Template 404",
+    "layout": "theme",
+    "sections": {
+        "template": {
+            "type": "template-cart"
+        }
+    },
+    "order": ["template"]
+} 
