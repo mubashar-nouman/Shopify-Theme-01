@@ -29,6 +29,16 @@
       </div>
     </div>
 
-    {% render 'pagination' | pagination: paginate %}
+    {% render 'pagination', pagination: paginate %}
   {% endpaginate %}
 </div>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'pagination' | pagination: paginate %}"
+  to: "{% render 'pagination', pagination: paginate %}"
+  position: 1290..1337
+{% endcomment %}
